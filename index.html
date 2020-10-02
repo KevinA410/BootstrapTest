@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Bootstrap</title>
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/Bootstrap_logo.png" width="30px" height="30px" class="d-inline-block align-top">
+        Bootstrap
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end text-center" id="navigation">
+        <div class="navbar-nav">
+          <a href="#home" class="nav-item nav-link active">Home</a>
+          <a href="#about" class="nav-item nav-link">About</a>
+          <a href="#contact" class="nav-item nav-link">Contact</a>
+        </div>
+      </div>
+   </nav>
+  </header>
+  <section class="container mt-5" id="home">
+   <div class="row pt-4">
+     <div class="col-12 col-md-6 align-self-center">
+       <h1 class="text-center">Lorem, ipsum dolor.</h1>
+       <br>
+       <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque laborum sequi corrupti totam aliquid, facere nulla fugiat accusamus odit itaque expedita, possimus illum similique quia blanditiis et eius! Eos sequi eveniet reprehenderit et eius id voluptatum exercitationem doloribus nihil voluptatibus. Deserunt magni nostrum voluptates minima, et quibusdam, eos corporis ut nesciunt consequatur reiciendis. Accusantium expedita vitae, quod ex fugit sed officiis animi neque debitis? Nam aliquid magni quis expedita cupiditate, accusamus dignissimos. Sit aut adipisci voluptatem sapiente voluptates deserunt tenetur facere, libero reprehenderit fuga facilis dolor iusto sunt quasi, rem harum, officia ut? Repudiandae laudantium laborum, aspernatur iure dolor enim?</p>
+        <button class="btn btn-outline-secondary btn-lg mb-3">
+          Read more
+        </button>
+      </div>
+     <div class="col-12 col-md-6 align-self-center">
+      <img src="img/phone4.png" width="100%">
+     </div>
+   </div>
+  </section>
+  <section id="about">
+    <div class=" container-fluid bg-secondary text-center p-5">
+      <h3 class="text-center">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam omnis neque ipsa quas assumenda tempore quo quasi nam! Recusandae, aliquam.
+      </h3>
+      <h3 class="pt-3">- Lorem, ipsum.</h3>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 mt-5">
+          <h4 class="text-center">Lorem, ipsum dolor.</h4>
+          <img src="img/phone.png" width="100%">
+          <p class="text-justify pl-5 pr-5 pt-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet sapiente inventore error cumque excepturi dolorem placeat ex necessitatibus corporis sequi..
+          </p>
+        </div>
+        <div class="col-12 col-md-4 mt-5">
+          <h4 class="text-center">Lorem, ipsum dolor.</h4>
+          <img src="img/phone2.png" width="100%">
+          <p class="text-justify pl-5 pr-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet sapiente inventore error cumque excepturi dolorem placeat ex necessitatibus corporis sequi..
+          </p>
+        </div>
+        <div class="col-12 col-md-4 mt-5">
+          <h4 class="text-center">Lorem, ipsum dolor.</h4>
+          <img src="img/phone3.png" width="100%" alt="">
+          <p class="text-justify pl-5 pr-5 pt-3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet sapiente inventore error cumque excepturi dolorem placeat ex necessitatibus corporis sequi..
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="contact"class="cointainer-fluid bg-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <form class="card m-3">
+            <div class="card-body">
+              <div class="form-group">
+                <label class="h3 d-flex justify-content-center">CONTACT</label>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Message" cols="30" rows="10"></textarea>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-secondary btn-block">
+                  Send
+                </button>
+              </div>
+            </div>
+          </form> 
+        </div>
+      </div>
+  </footer>
+  <p class="text-center m-2">&copy;2020 Todos los derechos reservados.</p>
+</body>
+</html>
